@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS Q4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            height: 60px;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12);
+            align-items: center;
+            justify-content: space-around;
+            z-index: 40;
+            color: #fff;
+        }
+
+        .logos {
+            display: flex;
+            width: 580px;
+            align-items: center;
+            position: relative;
+            left: 0;
+        }
+
+        .logos img {
+            width: 30px;
+            max-width: 100%;
+            display: block;
+
+        }
+
+        .logos p {
+            color: #5f6368;
+            font-size: 22px;
+            font-weight: 400;
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+            margin: 0 10px;
+        }
+
+        button {
+            margin: 0 5px;
+        }
+
+        .work {
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: .1px;
+            line-height: 24px;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 4px;
+            color: #1a73e8;
+            cursor: pointer;
+            justify-content: center;
+            padding: 12px 24px 11px;
+            text-decoration: none;
+            border-style: none;
+        }
+
+        .work:hover {
+            background-color: #e6eef9;
+        }
+
+        .sign {
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: .1px;
+            line-height: 24px;
+            align-items: center;
+            color: #1a73e8;
+            border: 0.1px solid rgb(142, 141, 141);
+            border-radius: 4px;
+            background-color: #fff;
+            cursor: pointer;
+            justify-content: center;
+            padding: 12px 24px 11px;
+            text-decoration: none;
+        }
+
+        .sign:hover {
+            background-color: #f3f5f8;
+        }
+
+        .account {
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: .1px;
+            line-height: 24px;
+            align-items: center;
+            background-color: #1a73e8;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            justify-content: center;
+            padding: 12px 24px 11px;
+            text-decoration: none;
+        }
+
+        .account:hover {
+            background-color: #4285f4;
+            ;
+        }
+
+        main {
+            display: flex;
+            position: relative;
+            top: 200px;
+            z-index: -1;
+        }
+
+        .sec-1 {
+            position: relative;
+            top: 10px;
+            width: 800px;
+            left: 40px;
+        }
+
+        .sec-1 h1 {
+            font-size: 56px;
+            line-height: 58px;
+            color: #202124;
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+            font-weight: 500;
+        }
+
+        .sec-1 p {
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 28px;
+            color: #5f6368;
+            font-weight: 400;
+            margin: 20px 0px;
+        }
+
+        .sec-2 img {
+            width: 75%;
+            position: relative;
+            top: -90px;
+            left: 210px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logos">
+                <img src="https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97"
+                    alt="Gmail logo">
+                <p>Gmail</p>
+            </div>
+            <div class="button">
+                <button class="work">For Work</button>
+                <button class="sign">Sign In</button>
+                <button class="account">Create an account</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-1">
+            <h1>Secure,smart and easy to use email</h1>
+            <p>Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
+            <button class="account">Create an account</button>
+            <button class="work">For work</button>
+        </section>
+        <section class="sec-2">
+            <img decoding="async" loading="eager"
+                src="https://lh3.googleusercontent.com/PWXM4hp9lRRezHTV86SqLwhRQMz4_Lk08jll3GkWBvBZy_Uk6kvUvwIrVilwaIW2mHZJoccchG6o9a5UdOJEwQPf9oJGmOGSglo3VW0=rw-e365-w2880"
+                title="Gmail inbox screen with enlarged function icons"
+                alt="Gmail inbox screen with enlarged function icons">
+        </section>
+    </main>
+
+</body>
+
+</html>
